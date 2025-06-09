@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture</title>
+</head>
+<style>
+      * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+    
+        body {
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+    
+        
+</style>
+
+
+<body>
+    <picture>
+        <source media="(min-width:1400px)" srcset="Imagenes/screen-desktop-svgrepo-com.svg">
+        <source media="(min-width:1200px)" srcset="Imagenes/devices-laptop-svgrepo-com.svg">
+        <source media="(min-width:768px)" srcset="Imagenes/devices-tablet-svgrepo-com.svg">   
+        <img src="Imagenes/devices-mobile-svgrepo-com.svg" alt="Mobile Devices">
+    </picture>
+</body>
+</html>
