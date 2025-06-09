@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1, user-scalable=no">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        header, footer {
+            background-color: yellowgreen;
+        }
+        nav{
+            background-color: aqua;
+        }
+        aside{
+            background-color: bisque;
+        }
+        header, footer, article, nav, aside {
+            padding: 20px;
+        }
+        .contenido {
+            display:flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+        }
+        .contenido article{
+            flex: 1; /* flex: 1 1 0   ; */
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>HEADER</h1>
+        </header>
+        <nav>
+            <p>NAV</p>
+        </nav>
+        <section class="contenido">
+            <article>
+                <h2>Article 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nemo dicta, eaque, ipsum consequuntur, saepe quia excepturi beatae corporis eius magnam? Reprehenderit culpa similique quae cumque id a ab? Fugiat?</p>
+            </article>
+            <article>
+                <h2>Article 2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nemo dicta, eaque, ipsum consequuntur, saepe quia excepturi beatae corporis eius magnam? Reprehenderit culpa similique quae cumque id a ab? Fugiat?</p>
+            </article>
+            <article>
+                <h2>Article 3</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nemo dicta, eaque, ipsum consequuntur, saepe quia excepturi beatae corporis eius magnam? Reprehenderit culpa similique quae cumque id a ab? Fugiat?</p>
+            </article>
+        </section>
+        <aside>ASIDE</aside>
+        <footer>FOOTER</footer>
+    </div>
+    
+</body>
+</html>
