@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- el viewport(ventana de visualización) el área visible del usuario de una página web. -->
+
+	<!-- width=device-width establece el ancho de la página para seguir el ancho de pantalla del dispositivo (que variará en función del dispositivo). -->
+
+	<!-- initial-scale=1.0 fija el nivel de zoom inicial cuando la página se carga por primera vez por el navegador.-->
+
+	<title>Document</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            list-style: none;
+            text-decoration: none;
+            font-family: sans-serif;
+            box-sizing: border-box; /*Esto asegura que el relleno y el borde estén incluidos en el ancho y alto total de la caja html.*/
+        }
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        [class*="col-"]{
+	        border:1px solid black;
+	        padding:20px 2px;
+        }
+
+        #pie{
+            background-color: yellow;
+            text-align: center;
+        }
+
+       
+        .col-d-1 {width: 8.33%;}  
+        .col-d-2 {width: 16.66%;}  
+        .col-d-3 {width: 25%;}
+        .col-d-4 {width: 33.33%;} /* para cuatro columnas */
+        .col-d-5 {width: 41.66%;}
+        .col-d-6 {width: 50%;}  /*para 2 columnas*/
+        .col-d-7 {width: 58.33%;}
+        .col-d-8 {width: 66.66%;}
+        .col-d-9 {width: 75%;}
+        .col-d-10 {width: 83.33%;}
+        .col-d-11 {width: 91.66%;}
+        .col-d-12 {width: 100%;}  /*para 1 columna*/
+
+
+        @media (max-width: 768px) {
+            .col-t-1 {width: 8.33%;}  
+            .col-t-2 {width: 16.66%;}  
+            .col-t-3 {width: 25%;}
+            .col-t-4 {width: 33.33%;} /* para cuatro columnas */
+            .col-t-5 {width: 41.66%;}
+            .col-t-6 {width: 50%;}  /*para 2 columnas*/
+            .col-t-7 {width: 58.33%;}
+            .col-t-8 {width: 66.66%;}
+            .col-t-9 {width: 75%;}
+            .col-t-10 {width: 83.33%;}
+            .col-t-11 {width: 91.66%;}
+            .col-t-12 {width: 100%;}  /*para 1 columna*/
+        }
+
+         @media (max-width: 500px) {
+            .flex-container {
+               /*  flex-direction: column; 
+                [class*="col-"] {
+                    width: 100%; 
+                } 
+                */
+                .col-m-1 {width: 8.33%;}  
+                .col-m-2 {width: 16.66%;}  
+                .col-m-3 {width: 25%;}
+                .col-m-4 {width: 33.33%;} /* para cuatro columnas */
+                .col-m-5 {width: 41.66%;}
+                .col-m-6 {width: 50%;}  /*para 2 columnas*/
+                .col-m-7 {width: 58.33%;}
+                .col-m-8 {width: 66.66%;}
+                .col-m-9 {width: 75%;}
+                .col-m-10 {width: 83.33%;}
+                .col-m-11 {width: 91.66%;}
+                .col-m-12 {width: 100%;}  /*para 1 columna*/
+
+            }
+        }
+
+    </style>
+	
+
+</head>
+<body>
+
+<div class="contenedor">
+	
+	<div class="flex-container" id="cabecera">
+		
+		<div class="col-d-2 col-t-1 col-m-1">logo</div>
+		<div class="col-d-6 col-t-6 col-m-11">titulo</div>
+		<div class="col-d-4 col-t-5 col-m-12">rrss</div>
+	
+	</div>
+
+	 <div class="flex-container">
+		
+		<div class="col-d-3 col-t-6 col-m-12">Opcion </div>
+		<div class="col-d-3 col-t-6 col-m-12">Opcion</div>
+        <div class="col-d-3 col-t-6 col-m-12">Opcion </div>
+		<div class="col-d-3 col-t-6 col-m-12">Opcion</div>
+	
+	</div>
+
+	<div class="flex-container">
+		
+		<div class="col-d-2 col-t-1 col-m-12">Aside</div>
+		<div class="col-d-10 col-t-11 col-m-12">Contenido Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, repellat necessitatibus id, esse eaque maxime et ullam aliquam tempore in reprehenderit modi laborum commodi eos quos voluptatum alias ipsa magnam.
+        Expedita repudiandae voluptate non perspiciatis, accusamus voluptas! Deserunt ab laudantium expedita dolorum magni voluptate quisquam tempore quam facere sit. Dolorum reprehenderit maxime vero? Ut dignissimos qui est minus cupiditate distinctio.
+        Perferendis commodi quis laudantium facere! Nostrum provident praesentium a dicta, veritatis non, esse quibusdam saepe eos inventore beatae quam necessitatibus asperiores dolor corrupti, reiciendis recusandae quidem aspernatur. Aperiam, in delectus!
+        Amet pariatur quasi explicabo doloribus aut eaque exercitationem blanditiis? Qui impedit officia asperiores facilis ullam. Doloribus, adipisci commodi velit culpa assumenda suscipit necessitatibus magni blanditiis molestiae tenetur atque alias error!
+        Voluptatum, aliquid optio. Beatae animi quasi aliquid voluptate illo saepe iure rem odit recusandae? Vel, dolorum soluta. Ea vitae autem, dignissimos, porro reprehenderit rerum doloremque aliquam possimus vero sed voluptatum?
+        Totam quibusdam vel, fugiat similique exercitationem voluptate eius saepe blanditiis, quas necessitatibus dolorem sapiente. Accusantium perferendis molestiae rerum consequuntur nemo ad at iusto neque non, ullam aliquam illo earum est.
+        Magnam quam libero necessitatibus fugit cumque vel quidem, velit expedita nihil veniam? Quod accusantium quos quibusdam optio, reprehenderit officia voluptatem recusandae neque natus! Nam ducimus nisi eos optio, recusandae molestiae!
+        Enim, consequatur accusantium. Illum hic voluptatem ducimus. Possimus quaerat ea sequi reprehenderit optio voluptatem distinctio. Autem ipsam deleniti enim recusandae quia porro! Aperiam impedit provident sunt voluptates, et cumque a.</div>
+	
+	
+	</div>
+    <div class="flex-container" id="pie">
+        
+        <div class="col-d-12 col-t-12 col-m-12">Pie 1</div>
+    </div>
+       
+		
+
+
+</div>
+	
+</body>
+</html>

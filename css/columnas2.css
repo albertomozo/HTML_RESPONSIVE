@@ -46,7 +46,7 @@ GLOBAL
 /*=============================================
 PANTALLA DE ESCRITORIO GRANDE - LARGE (lg) - revisamos en portatil o pc
 =============================================*/
-@media(max-width:1200px){
+
 
 	.col-lg-12{width:100%;}
 	.col-lg-11{width:91.66666667%;}
@@ -65,7 +65,7 @@ PANTALLA DE ESCRITORIO GRANDE - LARGE (lg) - revisamos en portatil o pc
 	
 
 	
-}
+
 
 /*=============================================PANTALLA DE
 ESCRITORIO MEDIANO - MEDIUM (md) - revisamos en tablet horizontal
